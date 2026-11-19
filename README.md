@@ -1,7 +1,7 @@
 # Jurnal-Personal
 
-Aplicatie consola in C# care salveaza notite intr-un fisier text (`notite.txt`).
-Fiecare notita primeste data si ora la care a fost scrisa.
+Aplicatie consola in C# care salveaza notite intr-un fisier text (notite.txt)
+Fiecare notita primeste data si ora la care a fost scrisa
 
 ## Cum se ruleaza
 1. Clonati repository-ul (aveti nevoie de acces, repository-ul este privat):
@@ -15,7 +15,7 @@ Fiecare notita primeste data si ora la care a fost scrisa.
 3. Sterge toate notitele
 0. Iesire
 
-Fisierul `notite.txt` este exclus din Git prin `.gitignore`.
+Fisierul `notite.txt` este exclus din Git prin `.gitignore`
 
-## Autor
-Renat Bicioc, grupa C-P-253-11
+## Facut de
+Renat Bicioc, C-P-253-11
