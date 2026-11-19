@@ -40,7 +40,10 @@ namespace JurnalPersonal
                             Console.WriteLine("Jurnalul este gol.");
                             break;
                         }
-                        Console.Write(File.ReadAllText(Fisier));
+                        string[] notite = File.ReadAllLines(Fisier);
+                        for (int i = 0; i < notite.Length; i++)
+                            Console.WriteLine($"{i + 1}. {notite[i]}");
+                        Console.WriteLine($"Total notite: {notite.Length}");
                         break;
 
                     case "3":
