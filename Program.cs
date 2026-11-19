@@ -15,6 +15,7 @@ namespace JurnalPersonal
             {
                 Console.WriteLine("\n1. Adauga notita");
                 Console.WriteLine("2. Afiseaza notitele");
+                Console.WriteLine("3. Sterge toate notitele");
                 Console.WriteLine("0. Iesire");
                 Console.Write("Optiunea: ");
                 optiune = Console.ReadLine();
@@ -40,6 +41,17 @@ namespace JurnalPersonal
                             break;
                         }
                         Console.Write(File.ReadAllText(Fisier));
+                        break;
+
+                    case "3":
+                        Console.Write("Sigur stergeti toate notitele? (da/nu): ");
+                        if (Console.ReadLine()?.Trim().ToLower() == "da")
+                        {
+                            File.Delete(Fisier);
+                            Console.WriteLine("Toate notitele au fost sterse.");
+                        }
+                        else
+                            Console.WriteLine("Stergere anulata.");
                         break;
 
                     case "0":
